@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="customSqlQuery2.Sql" xml:space="preserve">
+    <value>select "WorkOrderTimeSheet"."WorkOrderTimeSheetId",
+       "WorkOrderTimeSheet"."FkWorkOrderID",
+       "WorkOrderTimeSheet"."FkEmpID",
+       "WorkOrderTimeSheet"."StartDate",
+       "WorkOrderTimeSheet"."EndDate",
+       "WorkOrderTimeSheet"."StartTime",
+       "WorkOrderTimeSheet"."EndTime",
+       "WorkOrderTimeSheet"."Day",
+       "WorkOrderTimeSheet"."WorkStatus",
+       "WorkOrderTimeSheet"."Breake",
+       "WorkOrderTimeSheet"."IsRamadan",
+       "WorkOrderTimeSheet"."IsInvoiced",
+       "WorkOrderTimeSheet"."InvoiceNumber",
+       "WorkOrderTimeSheet"."WorkHrs",
+       "WorkOrderTimeSheet"."Remarks",
+       "EmployeesList"."EmpName",
+       "WorkOrderTimeSheet"."IsChecked",
+       "WorkOrderTimeSheet"."CheckedBy",
+       "WorkOrderTimeSheet"."CheckedDate",
+       "WorkOrderTimeSheet"."IsApproved",
+       "WorkOrderTimeSheet"."ApprovedBy",
+       "WorkOrderTimeSheet"."ApprovedDate",
+       "WorkOrderTimeSheet"."HourlyRate",
+       "WorkOrderTimeSheet"."OTRate",
+       "WorkOrderTimeSheet"."NormalWorkingHours",
+       "WorkOrderTimeSheet"."RamadanWorkingHours",
+       "WorkOrderTimeSheet"."OTWorkingHours",
+       "WorkOrderTimeSheet"."TotalWorkingPrice",
+       "WorkOrderTimeSheet"."TotalAdditionalPrice",
+       '1' as "Qty",
+      'Hour' as "OT Unit",
+"WorkOrderInvoice"."FkInvoiceId",
+Case "WorkOrderTimeSheet"."WorkStatus"
+When 'Holiday' then 'H'
+when 'Duty' then 'D'
+when 'Absent' then 'A'
+End,
+Case "WorkOrderTimeSheet"."ShiftStatus"
+When 1 then 'D'
+when 2 then 'N'
+End as ShiftStatus
+
+
+  from ("dbo"."WorkOrderTimeSheet" "WorkOrderTimeSheet"
+  inner join "dbo"."EmployeesList" "EmployeesList"
+       on ("EmployeesList"."EmpID" = "WorkOrderTimeSheet"."FkEmpID")
+inner join "dbo"."WorkOrderInvoice" "WorkOrderInvoice"
+       on ("WorkOrderInvoice"."FkWorkOrderId" = "WorkOrderTimeSheet"."FkWorkOrderID"))
+where ("WorkOrderTimeSheet"."StartDate" between "WorkOrderInvoice"."StartDate" And "WorkOrderInvoice"."EndDate")
+And "WorkOrderTimeSheet"."IsInvoiced" =1</value>
+  </data>
+  <data name="customSqlQuery1.Sql" xml:space="preserve">
+    <value>select distinct "Invoice"."InvoiceId", "Invoice"."InvoiceNumber",
+       "Invoice"."InvoiceDate", "Invoice"."InvoiceRefNo",
+       "Invoice"."FKJobOrderMasterID", "Invoice"."SRTTotal",
+       "Invoice"."TSTotal", "Invoice"."InvoiceTotal",
+       "Invoice"."Disount", "Invoice"."NetAmount",
+       "Invoice"."ProvideDescription", "Invoice"."InvoiceStartDate",
+       "Invoice"."InvoiceEndDate", "JobOrderMaster"."JobOrderNumber",
+       "ProjectsList"."ProjectName", "CustomersList"."CustomerName",
+       "TestsList"."TestName", "JobOrderMaster"."ExpiryDate",
+       "JobOrderMaster"."TransactionDate",
+       "WorkOrderInvoice"."FkWorkOrderId", "PriceUnitList"."UnitType",
+       "WorkOrderList"."FKJobOrderDetailsID",
+       "WorkOrderList"."WorkOrderNo",WorkOrderList.WorkOrderID,
+       "WorkOrderList"."RegularWorkHrs",
+       "WorkOrderList"."RamadanWorkHrs",
+       "WorkOrderList"."MonthlyRate",
+       "WorkOrderList"."UnitOfAddition",
+       "WorkOrderList"."ExtraWorkHourRate",
+       "WorkOrderList"."NightShiftPerc","WorkOrderList"."SiteName",
+       "WorkOrderList"."Description", "WorkOrderList"."TransDate",ISNULL(n.NigthDays,0) as NigthDays ,(ISNULL(n.NigthAmount,0) * ISNULL("WorkOrderList"."NightShiftPerc",0))/100 as  NightShiftPercAmount
+       ,nn.Sum_OTRate,nn.Sum_OTWorkingHours,nn.Sum_TotalAdditionalPrice,nn.Sum_WorkHrs,nn.Sum_TotalWorkingPrice
+  from ((((((((("dbo"."Invoice" "Invoice"
+  inner join "dbo"."JobOrderMaster" "JobOrderMaster"
+       on ("JobOrderMaster"."JobOrderMasterID" = "Invoice"."FKJobOrderMasterID"))
+  inner join "dbo"."ProjectsList" "ProjectsList"
+       on ("ProjectsList"."ProjectID" = "JobOrderMaster"."FKProjectID"))
+  inner join "dbo"."CustomersList" "CustomersList"
+       on ("CustomersList"."CustomerID" = "JobOrderMaster"."FKCustomerID"))
+  inner join "dbo"."JobOrderDetails" "JobOrderDetails"
+       on ("JobOrderDetails"."FKJobOrderMasterID" = "JobOrderMaster"."JobOrderMasterID"))
+  inner join "dbo"."TestsList" "TestsList"
+       on ("TestsList"."TestID" = "JobOrderDetails"."FKTestID"))
+  inner join "dbo"."WorkOrderInvoice" "WorkOrderInvoice"
+       on ("WorkOrderInvoice"."FkInvoiceId" = "Invoice"."InvoiceId"))
+  inner join "dbo"."PriceUnitList" "PriceUnitList"
+       on ("PriceUnitList"."PriceUnitID" = "JobOrderDetails"."FKPriceUnitID"))
+  inner join "dbo"."WorkOrderList" "WorkOrderList"
+       on (("WorkOrderList"."FKJobOrderDetailsID" = "JobOrderDetails"."JobOrderDetailsID")
+       and ("WorkOrderList"."WorkOrderID" = "WorkOrderInvoice"."FkWorkOrderId")))
+  inner join "dbo"."WorkOrderTimeSheet" "WorkOrderTimeSheet"
+       on ("WorkOrderTimeSheet"."FkWorkOrderID" = "WorkOrderList"."WorkOrderID"))
+	   left join (
+	   SELECT        Invoice.InvoiceId, WorkOrderList.WorkOrderID,count(WorkOrderTimeSheet.TotalAdditionalPrice) as NigthDays,Sum( WorkOrderTimeSheet.TotalAdditionalPrice)+ Sum( WorkOrderTimeSheet.TotalWorkingPrice) as NigthAmount
+		FROM            Invoice INNER JOIN
+								 WorkOrderInvoice ON Invoice.InvoiceId = WorkOrderInvoice.FkInvoiceId INNER JOIN
+								 WorkOrderList ON WorkOrderInvoice.FkWorkOrderId = WorkOrderList.WorkOrderID INNER JOIN
+								 WorkOrderTimeSheet ON WorkOrderList.WorkOrderID = WorkOrderTimeSheet.FkWorkOrderID
+
+
+		 where WorkOrderTimeSheet.ShiftStatus=2
+		 group by Invoice.InvoiceId, WorkOrderList.WorkOrderID
+	   ) N on n.InvoiceId="Invoice"."InvoiceId" and n.WorkOrderID=WorkOrderList.WorkOrderID
+
+	   left join (
+	   SELECT        Invoice.InvoiceId, WorkOrderList.WorkOrderID,sum("WorkOrderTimeSheet"."WorkHrs") as "Sum_WorkHrs",
+       sum("WorkOrderTimeSheet"."OTRate") as "Sum_OTRate",
+       sum("WorkOrderTimeSheet"."OTWorkingHours") as "Sum_OTWorkingHours",
+       sum("WorkOrderTimeSheet"."TotalWorkingPrice") as "Sum_TotalWorkingPrice",
+       sum("WorkOrderTimeSheet"."TotalAdditionalPrice") as "Sum_TotalAdditionalPrice",
+	   Sum( WorkOrderTimeSheet.TotalAdditionalPrice) TotalAdditionalPrice,Sum( WorkOrderTimeSheet.TotalWorkingPrice) as TotalWorkingPrice
+FROM            Invoice INNER JOIN
+				         WorkOrderInvoice ON Invoice.InvoiceId = WorkOrderInvoice.FkInvoiceId INNER JOIN
+                         WorkOrderList ON WorkOrderInvoice.FkWorkOrderId = WorkOrderList.WorkOrderID INNER JOIN
+                         WorkOrderTimeSheet ON WorkOrderList.WorkOrderID = WorkOrderTimeSheet.FkWorkOrderID
+ where  WorkOrderTimeSheet.StartDate between "WorkOrderInvoice"."StartDate" And "WorkOrderInvoice"."EndDate"
+ group by Invoice.InvoiceId, WorkOrderList.WorkOrderID
+	   ) NN on NN.InvoiceId="Invoice"."InvoiceId" and NN.WorkOrderID=WorkOrderList.WorkOrderID
+ where ("PriceUnitList"."UnitType" = 1) order by Invoice.InvoiceId, WorkOrderList.WorkOrderID</value>
+  </data>
+  <data name="xrRichText1.SerializableRtfString" xml:space="preserve">
+    <value>ewBcAHIAdABmADEAXABhAG4AcwBpAGMAcABnADEAMgA1ADIADQAKAHsADQAKAFwAZgBvAG4AdAB0AGIAbAANAAoAewBcAGYAMAAgAFQAaQBtAGUAcwAgAE4AZQB3ACAAUgBvAG0AYQBuADsAfQANAAoAfQANAAoAewANAAoAXABjAG8AbABvAHIAdABiAGwADQAKADsADQAKAFwAcgBlAGQAMABcAGcAcgBlAGUAbgAwAFwAYgBsAHUAZQAwADsADQAKAFwAcgBlAGQAMABcAGcAcgBlAGUAbgAwAFwAYgBsAHUAZQAyADUANQA7AA0ACgB9AA0ACgBcAG4AbwB1AGkAYwBvAG0AcABhAHQAXABzAHAAbAB5AHQAdwBuAGkAbgBlAFwAaAB0AG0AYQB1AHQAcwBwAHsAXABwAGEAcgBkAFwAcABsAGEAaQBuAFwAcQBsAHsAXABiAFwAZgBzADMAMgBcAGMAZgAxACAAVwBvAHIAawAgAG8AcgBkAGUAcgAgAE0AbwBuAHQAaABsAHkALwBEAGEAaQBsAHkAIABoAGkAcgBpAG4AZwAgAHMAdQBtAG0AYQByAHkAfQBcAGMAZgAxAFwAcABhAHIAfQANAAoAfQANAAoA</value>
+  </data>
+  <data name="sqlDataSource1.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9Ikludm9pY2UiPjxGaWVsZCBOYW1lPSJJbnZvaWNlSWQiIFR5cGU9IkludDY0IiAvPjxGaWVsZCBOYW1lPSJJbnZvaWNlTnVtYmVyIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ikludm9pY2VEYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iSW52b2ljZVJlZk5vIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkZLSm9iT3JkZXJNYXN0ZXJJRCIgVHlwZT0iSW50NjQiIC8+PEZpZWxkIE5hbWU9IlNSVFRvdGFsIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJUU1RvdGFsIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJJbnZvaWNlVG90YWwiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkRpc291bnQiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9Ik5ldEFtb3VudCIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iUHJvdmlkZURlc2NyaXB0aW9uIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ikludm9pY2VTdGFydERhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJJbnZvaWNlRW5kRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkpvYk9yZGVyTnVtYmVyIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlByb2plY3ROYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkN1c3RvbWVyTmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJUZXN0TmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJFeHBpcnlEYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iVHJhbnNhY3Rpb25EYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iRmtXb3JrT3JkZXJJZCIgVHlwZT0iSW50NjQiIC8+PEZpZWxkIE5hbWU9IlVuaXRUeXBlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRktKb2JPcmRlckRldGFpbHNJRCIgVHlwZT0iSW50NjQiIC8+PEZpZWxkIE5hbWU9IldvcmtPcmRlck5vIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IldvcmtPcmRlcklEIiBUeXBlPSJJbnQ2NCIgLz48RmllbGQgTmFtZT0iUmVndWxhcldvcmtIcnMiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlJhbWFkYW5Xb3JrSHJzIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJNb250aGx5UmF0ZSIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iVW5pdE9mQWRkaXRpb24iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRXh0cmFXb3JrSG91clJhdGUiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9Ik5pZ2h0U2hpZnRQZXJjIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJTaXRlTmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEZXNjcmlwdGlvbiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJUcmFuc0RhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJOaWd0aERheXMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJOaWdodFNoaWZ0UGVyY0Ftb3VudCIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iU3VtX09UUmF0ZSIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iU3VtX09UV29ya2luZ0hvdXJzIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJTdW1fVG90YWxBZGRpdGlvbmFsUHJpY2UiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlN1bV9Xb3JrSHJzIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJTdW1fVG90YWxXb3JraW5nUHJpY2UiIFR5cGU9IkRlY2ltYWwiIC8+PC9WaWV3PjxWaWV3IE5hbWU9IldvcmtPZGVySW52b2ljZWQiPjxGaWVsZCBOYW1lPSJJbnZvaWNlSWQiIFR5cGU9IkludDY0IiAvPjxGaWVsZCBOYW1lPSJGa0ludm9pY2VJZCIgVHlwZT0iSW50NjQiIC8+PEZpZWxkIE5hbWU9IkZrV29ya09yZGVySWQiIFR5cGU9IkludDY0IiAvPjxGaWVsZCBOYW1lPSJTdGFydERhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJFbmREYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48L1ZpZXc+PFZpZXcgTmFtZT0iV29ya09yZGVyVGltZVNoZWV0Ij48RmllbGQgTmFtZT0iV29ya09yZGVyVGltZVNoZWV0SWQiIFR5cGU9IkludDY0IiAvPjxGaWVsZCBOYW1lPSJGa1dvcmtPcmRlcklEIiBUeXBlPSJJbnQ2NCIgLz48RmllbGQgTmFtZT0iRmtFbXBJRCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlN0YXJ0RGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkVuZERhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJTdGFydFRpbWUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJFbmRUaW1lIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iRGF5IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IldvcmtTdGF0dXMiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQnJlYWtlIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJJc1JhbWFkYW4iIFR5cGU9IkJvb2xlYW4iIC8+PEZpZWxkIE5hbWU9IklzSW52b2ljZWQiIFR5cGU9IkJvb2xlYW4iIC8+PEZpZWxkIE5hbWU9Ikludm9pY2VOdW1iZXIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iV29ya0hycyIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iUmVtYXJrcyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJFbXBOYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IklzQ2hlY2tlZCIgVHlwZT0iQm9vbGVhbiIgLz48RmllbGQgTmFtZT0iQ2hlY2tlZEJ5IiBUeXBlPSJJbnQ2NCIgLz48RmllbGQgTmFtZT0iQ2hlY2tlZERhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJJc0FwcHJvdmVkIiBUeXBlPSJCb29sZWFuIiAvPjxGaWVsZCBOYW1lPSJBcHByb3ZlZEJ5IiBUeXBlPSJJbnQ2NCIgLz48RmllbGQgTmFtZT0iQXBwcm92ZWREYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iSG91cmx5UmF0ZSIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iT1RSYXRlIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJOb3JtYWxXb3JraW5nSG91cnMiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlJhbWFkYW5Xb3JraW5nSG91cnMiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9Ik9UV29ya2luZ0hvdXJzIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJUb3RhbFdvcmtpbmdQcmljZSIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iVG90YWxBZGRpdGlvbmFsUHJpY2UiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlF0eSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJPVCBVbml0IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkZrSW52b2ljZUlkIiBUeXBlPSJJbnQ2NCIgLz48RmllbGQgTmFtZT0iQ29sdW1uMzMiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iU2hpZnRTdGF0dXMiIFR5cGU9IlN0cmluZyIgLz48L1ZpZXc+PFJlbGF0aW9uIE1hc3Rlcj0iSW52b2ljZSIgRGV0YWlsPSJXb3JrT3JkZXJUaW1lU2hlZXQiPjxLZXlDb2x1bW4gTWFzdGVyPSJJbnZvaWNlSWQiIERldGFpbD0iRmtJbnZvaWNlSWQiIC8+PEtleUNvbHVtbiBNYXN0ZXI9IkZrV29ya09yZGVySWQiIERldGFpbD0iRmtXb3JrT3JkZXJJRCIgLz48L1JlbGF0aW9uPjwvRGF0YVNldD4=</value>
+  </data>
+</root>

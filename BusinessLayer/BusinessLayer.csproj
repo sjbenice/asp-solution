@@ -1,0 +1,672 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{01067195-6D24-4198-9695-D9403A0BF876}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BusinessLayer</RootNamespace>
+    <AssemblyName>BusinessLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells, Version=23.9.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Aspose New\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Docs.v16.1">
+      <HintPath>..\..\Library\ThirdParty\DX 16\DevExpress.Docs.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Office.v16.1.Core">
+      <HintPath>..\..\Library\ThirdParty\DX 16\DevExpress.Office.v16.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Spreadsheet.v16.1.Core">
+      <HintPath>..\..\Library\ThirdParty\DX 16\DevExpress.Spreadsheet.v16.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.XLS, Version=12.7.0.0, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\New Spire Package Don't Delete\Spire.XLS.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccreditionList.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ActSysAdmin.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ActSysAdmin.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ActSysAdmin.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ActSysAdmin.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ActSysAdmin.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ActSysAdmin.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMAppSettings.cs">
+      <DependentUpon>ActSysAdmin.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADMCategoryMaster.cs">
+      <DependentUpon>ActSysAdmin.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADMDatabases.cs">
+      <DependentUpon>ActSysAdmin.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDB.cs" />
+    <Compile Include="Admin\AppSettingsDB.cs" />
+    <Compile Include="Admin\CategoryMasterDB.cs" />
+    <Compile Include="Admin\DatabasesDB.cs" />
+    <Compile Include="Admin\LinksCategoryDB.cs" />
+    <Compile Include="Admin\LinksDB.cs" />
+    <Compile Include="Admin\ModuleDB.cs" />
+    <Compile Include="Admin\RoleLinkOptionDB.cs" />
+    <Compile Include="Admin\RoleLinkOptionViewDB.cs" />
+    <Compile Include="Admin\RoleLinksDB.cs" />
+    <Compile Include="Admin\RoleOptions.cs" />
+    <Compile Include="Admin\RoleModulesDB.cs" />
+    <Compile Include="Admin\RolesDB.cs" />
+    <Compile Include="Admin\UserRolesDB.cs" />
+    <Compile Include="Admin\UsersDB.cs" />
+    <Compile Include="ADMLinkCategory.cs">
+      <DependentUpon>ActSysAdmin.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADMLinks.cs">
+      <DependentUpon>ActSysAdmin.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADMModules.cs">
+      <DependentUpon>ActSysAdmin.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADMOption.cs">
+      <DependentUpon>ActSysAdmin.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADMReportPages.cs">
+      <DependentUpon>ActSysAdmin.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADMReports.cs">
+      <DependentUpon>ActSysAdmin.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADMReportsCategory.cs">
+      <DependentUpon>ActSysAdmin.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADMRoleLink.cs">
+      <DependentUpon>ActSysAdmin.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADMRoleLinkOptions.cs">
+      <DependentUpon>ActSysAdmin.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADMRoleModules.cs">
+      <DependentUpon>ActSysAdmin.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADMRoles.cs">
+      <DependentUpon>ActSysAdmin.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADMUserRoles.cs">
+      <DependentUpon>ActSysAdmin.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADMUsers.cs">
+      <DependentUpon>ActSysAdmin.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADMUserSettings.cs">
+      <DependentUpon>ActSysAdmin.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AttachedFiles.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AttachFileTransTypes.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ContractorsList.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CryptoHelper.cs" />
+    <Compile Include="CustomersList.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBBase.cs" />
+    <Compile Include="DBGeneric.cs" />
+    <Compile Include="EmployeesList.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EnquiryDetails.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EnquiryMaster.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EquipmentsList.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ExcelMappingFieldList.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="fnSplit_Result.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetSampleFieldsByID_Result.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ItemsList.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JobOrderDetails.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JobOrderMaster.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LabsList.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LabSys.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LabSys.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LabSys.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LabSys.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LabSys.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialsDetails.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialsDetailsTests.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialsTypes.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialTypesCustomFields.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ViewQuotationDetails.cs" />
+    <Compile Include="Models\WorkOrderList.cs" />
+    <Compile Include="Pages\ViewLateReportListDB.cs" />
+    <Compile Include="Pages\AccreditionListDB.cs" />
+    <Compile Include="Pages\AttachedFilesDB.cs" />
+    <Compile Include="Pages\ContractorsListDB.cs" />
+    <Compile Include="Pages\CustomersListDB.cs" />
+    <Compile Include="Pages\EmployeesListDB.cs" />
+    <Compile Include="Pages\EnquiryDetailsDB.cs" />
+    <Compile Include="Pages\EnquiryMasterDB.cs" />
+    <Compile Include="Pages\EquipmentsListDB.cs" />
+    <Compile Include="Pages\ExcelGroupHandlingCLS.cs" />
+    <Compile Include="Pages\ExcelHandlingCLS.cs" />
+    <Compile Include="Pages\InvoiceDB.cs" />
+    <Compile Include="Pages\ItemsListDB.cs" />
+    <Compile Include="Pages\JobOrderDetailsDB.cs" />
+    <Compile Include="Pages\PaymentAttachedFilesDB.cs" />
+    <Compile Include="Pages\ReportGroupExcelMappingDB.cs" />
+    <Compile Include="Pages\TestReportingDB.cs" />
+    <Compile Include="Pages\JobOrderMasterDB.cs" />
+    <Compile Include="Pages\LabsListDB.cs" />
+    <Compile Include="Pages\MaterialsDetailsDB.cs" />
+    <Compile Include="Pages\MaterialsDetailsTestsDB.cs" />
+    <Compile Include="Pages\MaterialsTypesDB.cs" />
+    <Compile Include="Pages\MaterialTypesCustomFieldsDB.cs" />
+    <Compile Include="Pages\PaymentDetailsDB.cs" />
+    <Compile Include="Pages\PaymentMasterDB.cs" />
+    <Compile Include="Pages\PriceUnitListDB.cs" />
+    <Compile Include="Pages\ProjectsListDB.cs" />
+    <Compile Include="Pages\ProjectsTypesDB.cs" />
+    <Compile Include="Pages\QuotationDetailsDB.cs" />
+    <Compile Include="Pages\QuotationMasterDB.cs" />
+    <Compile Include="Pages\QuotationWorkOrderListDB.cs" />
+    <Compile Include="Pages\ReportGroupDB.cs" />
+    <Compile Include="Pages\RSSDetailsDB.cs" />
+    <Compile Include="Pages\RSSMasterDB.cs" />
+    <Compile Include="Pages\SampleReceiveListDB.cs" />
+    <Compile Include="Pages\SampleReceiveMaterialCustomFieldDB.cs" />
+    <Compile Include="Pages\SampleReceiveMaterialTableCustomFieldDB.cs" />
+    <Compile Include="Pages\SampleReceiveTestInvoiceDB.cs" />
+    <Compile Include="Pages\SampleReceiveTestListDB.cs" />
+    <Compile Include="Pages\SubcontractorsListDB.cs" />
+    <Compile Include="Pages\TermsConditionListDB.cs" />
+    <Compile Include="Pages\TestContractorsDB.cs" />
+    <Compile Include="Pages\TestEquipmentsDB.cs" />
+    <Compile Include="Pages\TestExcelMappingDB.cs" />
+    <Compile Include="Pages\TestItemsDB.cs" />
+    <Compile Include="Pages\TestPricesDB.cs" />
+    <Compile Include="Pages\TestsListDB.cs" />
+    <Compile Include="Pages\TimesheetPaySlipDB.cs" />
+    <Compile Include="Pages\ValidityListDB.cs" />
+    <Compile Include="Pages\ValidityListDetailsDB.cs" />
+    <Compile Include="Pages\WorkOrderInvoiceDB.cs" />
+    <Compile Include="Pages\WorkOrderListDB.cs" />
+    <Compile Include="Pages\WorkOrderTimeSheetDB.cs" />
+    <Compile Include="PaymentAttachedFile.cs" />
+    <Compile Include="PaymentDetails.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentMaster.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PriceUnitList.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectsList.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectsTypes.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuotationDetails.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QuotationMaster.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QuotationWorkOrderList.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReportGroup.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReportGroupExcelMapping.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RoleLinkOptionView.cs">
+      <DependentUpon>ActSysAdmin.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RSSDetails.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RSSMaster.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SampleReceiveList.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SampleReceiveMaterialCustomField.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SampleReceiveMaterialTableCustomField.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SampleReceiveTestInvoice.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SampleReceiveTestList.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SpGetAllQuotationMasterHistory_Result.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SPGetWorkOrderToInvoice_Result.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SPPendingAdvancedPayment_Result.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SqlQueryModels\SampleReceiveListReportNumbers.cs" />
+    <Compile Include="SqlQueryModels\SubcontractorService.cs" />
+    <Compile Include="SqlQueryModels\TestReporting.cs" />
+    <Compile Include="SubcontractorsList.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagrams.cs">
+      <DependentUpon>ActSysAdmin.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TermsConditionList.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestContractors.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestEquipments.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestExcelMapping.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestItems.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestPrices.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestReporting.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestsList.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TimesheetPaySlip.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserLinkOptionsView.cs">
+      <DependentUpon>ActSysAdmin.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ValidityList.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ValidityListDetails.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewBendingEnquiryMaster.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewEnquiryMaster.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewExcelCellFieldMapping.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewGelAllInvoice.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewGetAllQuotationMasterHistory.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewIdelJobOrder.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewInvoicesBalance.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewJobOrderList.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewJobOrderMaster.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewJobOrderPendingToInvoicer.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewJobOrderTestList.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLateReport.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewNewJobOrderMaster.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewNewQuotationMaster.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewN_OFUnPaidBills.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPendingPayment.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewQuotationDetails.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewReportGroupExcelCellFieldMapping.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewRSS.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSampleReceiveMaterialCustomField.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSampleReceiveTests.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTestPrices.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTestUnits.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewUserRolesList.cs">
+      <DependentUpon>ActSysAdmin.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewWorkOrderList.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WorkOrderInvoice.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WorkOrderList.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WorkOrderTimeSheet.cs">
+      <DependentUpon>LabSys.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="ActSysAdmin.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ActSysAdmin.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ActSysAdmin.edmx.diagram">
+      <DependentUpon>ActSysAdmin.edmx</DependentUpon>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="LabSys.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>LabSys.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="bin\Debug\BusinessLayer.dll.config" />
+    <None Include="bin\Release\BusinessLayer.dll.config" />
+    <None Include="LabSys.edmx.diagram">
+      <DependentUpon>LabSys.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ActSysAdmin.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ActSysAdmin.edmx</DependentUpon>
+      <LastGenOutput>ActSysAdmin.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ActSysAdmin.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ActSysAdmin.edmx</DependentUpon>
+      <LastGenOutput>ActSysAdmin.cs</LastGenOutput>
+    </Content>
+    <Content Include="bin\Debug\Aspose.Cells.dll" />
+    <Content Include="bin\Debug\Aspose.Cells.xml" />
+    <Content Include="bin\Debug\BusinessLayer.dll" />
+    <Content Include="bin\Debug\BusinessLayer.pdb" />
+    <Content Include="bin\Debug\DevExpress.Charts.v16.1.Core.dll" />
+    <Content Include="bin\Debug\DevExpress.CodeParser.v16.1.dll" />
+    <Content Include="bin\Debug\DevExpress.Data.v16.1.dll" />
+    <Content Include="bin\Debug\DevExpress.Data.v16.1.xml" />
+    <Content Include="bin\Debug\DevExpress.DataAccess.v16.1.dll" />
+    <Content Include="bin\Debug\DevExpress.DataAccess.v16.1.xml" />
+    <Content Include="bin\Debug\DevExpress.Docs.v16.1.dll" />
+    <Content Include="bin\Debug\DevExpress.Docs.v16.1.xml" />
+    <Content Include="bin\Debug\DevExpress.Office.v16.1.Core.dll" />
+    <Content Include="bin\Debug\DevExpress.Office.v16.1.Core.xml" />
+    <Content Include="bin\Debug\DevExpress.Pdf.v16.1.Core.dll" />
+    <Content Include="bin\Debug\DevExpress.Pdf.v16.1.Core.xml" />
+    <Content Include="bin\Debug\DevExpress.Pdf.v16.1.Drawing.dll" />
+    <Content Include="bin\Debug\DevExpress.Pdf.v16.1.Drawing.xml" />
+    <Content Include="bin\Debug\DevExpress.Printing.v16.1.Core.dll" />
+    <Content Include="bin\Debug\DevExpress.Printing.v16.1.Core.xml" />
+    <Content Include="bin\Debug\DevExpress.RichEdit.v16.1.Core.dll" />
+    <Content Include="bin\Debug\DevExpress.RichEdit.v16.1.Core.xml" />
+    <Content Include="bin\Debug\DevExpress.Snap.v16.1.Core.dll" />
+    <Content Include="bin\Debug\DevExpress.Snap.v16.1.Core.xml" />
+    <Content Include="bin\Debug\DevExpress.Sparkline.v16.1.Core.dll" />
+    <Content Include="bin\Debug\DevExpress.Sparkline.v16.1.Core.xml" />
+    <Content Include="bin\Debug\DevExpress.Spreadsheet.v16.1.Core.dll" />
+    <Content Include="bin\Debug\DevExpress.Spreadsheet.v16.1.Core.xml" />
+    <Content Include="bin\Debug\DevExpress.Xpo.v16.1.dll" />
+    <Content Include="bin\Debug\DevExpress.Xpo.v16.1.xml" />
+    <Content Include="bin\Debug\DevExpress.XtraCharts.v16.1.dll" />
+    <Content Include="bin\Debug\DevExpress.XtraCharts.v16.1.xml" />
+    <Content Include="bin\Debug\EntityFramework.dll" />
+    <Content Include="bin\Debug\EntityFramework.SqlServer.dll" />
+    <Content Include="bin\Debug\EntityFramework.SqlServer.xml" />
+    <Content Include="bin\Debug\EntityFramework.xml" />
+    <Content Include="bin\Release\Aspose.Cells.dll" />
+    <Content Include="bin\Release\Aspose.Cells.xml" />
+    <Content Include="bin\Release\BusinessLayer.dll" />
+    <Content Include="bin\Release\BusinessLayer.pdb" />
+    <Content Include="bin\Release\DevExpress.Charts.v16.1.Core.dll" />
+    <Content Include="bin\Release\DevExpress.CodeParser.v16.1.dll" />
+    <Content Include="bin\Release\DevExpress.Data.v16.1.dll" />
+    <Content Include="bin\Release\DevExpress.Data.v16.1.xml" />
+    <Content Include="bin\Release\DevExpress.DataAccess.v16.1.dll" />
+    <Content Include="bin\Release\DevExpress.DataAccess.v16.1.xml" />
+    <Content Include="bin\Release\DevExpress.Docs.v16.1.dll" />
+    <Content Include="bin\Release\DevExpress.Docs.v16.1.xml" />
+    <Content Include="bin\Release\DevExpress.Office.v16.1.Core.dll" />
+    <Content Include="bin\Release\DevExpress.Office.v16.1.Core.xml" />
+    <Content Include="bin\Release\DevExpress.Pdf.v16.1.Core.dll" />
+    <Content Include="bin\Release\DevExpress.Pdf.v16.1.Core.xml" />
+    <Content Include="bin\Release\DevExpress.Pdf.v16.1.Drawing.dll" />
+    <Content Include="bin\Release\DevExpress.Pdf.v16.1.Drawing.xml" />
+    <Content Include="bin\Release\DevExpress.Printing.v16.1.Core.dll" />
+    <Content Include="bin\Release\DevExpress.Printing.v16.1.Core.xml" />
+    <Content Include="bin\Release\DevExpress.RichEdit.v16.1.Core.dll" />
+    <Content Include="bin\Release\DevExpress.RichEdit.v16.1.Core.xml" />
+    <Content Include="bin\Release\DevExpress.Snap.v16.1.Core.dll" />
+    <Content Include="bin\Release\DevExpress.Snap.v16.1.Core.xml" />
+    <Content Include="bin\Release\DevExpress.Sparkline.v16.1.Core.dll" />
+    <Content Include="bin\Release\DevExpress.Sparkline.v16.1.Core.xml" />
+    <Content Include="bin\Release\DevExpress.Spreadsheet.v16.1.Core.dll" />
+    <Content Include="bin\Release\DevExpress.Spreadsheet.v16.1.Core.xml" />
+    <Content Include="bin\Release\DevExpress.Xpo.v16.1.dll" />
+    <Content Include="bin\Release\DevExpress.Xpo.v16.1.xml" />
+    <Content Include="bin\Release\DevExpress.XtraCharts.v16.1.dll" />
+    <Content Include="bin\Release\DevExpress.XtraCharts.v16.1.xml" />
+    <Content Include="bin\Release\de\DevExpress.Data.v16.1.resources.dll" />
+    <Content Include="bin\Release\de\DevExpress.DataAccess.v16.1.resources.dll" />
+    <Content Include="bin\Release\de\DevExpress.Office.v16.1.Core.resources.dll" />
+    <Content Include="bin\Release\de\DevExpress.Pdf.v16.1.Core.resources.dll" />
+    <Content Include="bin\Release\de\DevExpress.Printing.v16.1.Core.resources.dll" />
+    <Content Include="bin\Release\de\DevExpress.RichEdit.v16.1.Core.resources.dll" />
+    <Content Include="bin\Release\de\DevExpress.Snap.v16.1.Core.resources.dll" />
+    <Content Include="bin\Release\de\DevExpress.Sparkline.v16.1.Core.resources.dll" />
+    <Content Include="bin\Release\de\DevExpress.Spreadsheet.v16.1.Core.resources.dll" />
+    <Content Include="bin\Release\de\DevExpress.Xpo.v16.1.resources.dll" />
+    <Content Include="bin\Release\de\DevExpress.XtraCharts.v16.1.resources.dll" />
+    <Content Include="bin\Release\EntityFramework.dll" />
+    <Content Include="bin\Release\EntityFramework.SqlServer.dll" />
+    <Content Include="bin\Release\EntityFramework.SqlServer.xml" />
+    <Content Include="bin\Release\EntityFramework.xml" />
+    <Content Include="bin\Release\es\DevExpress.Data.v16.1.resources.dll" />
+    <Content Include="bin\Release\es\DevExpress.DataAccess.v16.1.resources.dll" />
+    <Content Include="bin\Release\es\DevExpress.Office.v16.1.Core.resources.dll" />
+    <Content Include="bin\Release\es\DevExpress.Pdf.v16.1.Core.resources.dll" />
+    <Content Include="bin\Release\es\DevExpress.Printing.v16.1.Core.resources.dll" />
+    <Content Include="bin\Release\es\DevExpress.RichEdit.v16.1.Core.resources.dll" />
+    <Content Include="bin\Release\es\DevExpress.Snap.v16.1.Core.resources.dll" />
+    <Content Include="bin\Release\es\DevExpress.Sparkline.v16.1.Core.resources.dll" />
+    <Content Include="bin\Release\es\DevExpress.Spreadsheet.v16.1.Core.resources.dll" />
+    <Content Include="bin\Release\es\DevExpress.Xpo.v16.1.resources.dll" />
+    <Content Include="bin\Release\es\DevExpress.XtraCharts.v16.1.resources.dll" />
+    <Content Include="bin\Release\ja\DevExpress.Data.v16.1.resources.dll" />
+    <Content Include="bin\Release\ja\DevExpress.DataAccess.v16.1.resources.dll" />
+    <Content Include="bin\Release\ja\DevExpress.Office.v16.1.Core.resources.dll" />
+    <Content Include="bin\Release\ja\DevExpress.Pdf.v16.1.Core.resources.dll" />
+    <Content Include="bin\Release\ja\DevExpress.Printing.v16.1.Core.resources.dll" />
+    <Content Include="bin\Release\ja\DevExpress.RichEdit.v16.1.Core.resources.dll" />
+    <Content Include="bin\Release\ja\DevExpress.Snap.v16.1.Core.resources.dll" />
+    <Content Include="bin\Release\ja\DevExpress.Sparkline.v16.1.Core.resources.dll" />
+    <Content Include="bin\Release\ja\DevExpress.Spreadsheet.v16.1.Core.resources.dll" />
+    <Content Include="bin\Release\ja\DevExpress.Xpo.v16.1.resources.dll" />
+    <Content Include="bin\Release\ja\DevExpress.XtraCharts.v16.1.resources.dll" />
+    <Content Include="bin\Release\ru\DevExpress.Data.v16.1.resources.dll" />
+    <Content Include="bin\Release\ru\DevExpress.DataAccess.v16.1.resources.dll" />
+    <Content Include="bin\Release\ru\DevExpress.Office.v16.1.Core.resources.dll" />
+    <Content Include="bin\Release\ru\DevExpress.Pdf.v16.1.Core.resources.dll" />
+    <Content Include="bin\Release\ru\DevExpress.Printing.v16.1.Core.resources.dll" />
+    <Content Include="bin\Release\ru\DevExpress.RichEdit.v16.1.Core.resources.dll" />
+    <Content Include="bin\Release\ru\DevExpress.Snap.v16.1.Core.resources.dll" />
+    <Content Include="bin\Release\ru\DevExpress.Sparkline.v16.1.Core.resources.dll" />
+    <Content Include="bin\Release\ru\DevExpress.Spreadsheet.v16.1.Core.resources.dll" />
+    <Content Include="bin\Release\ru\DevExpress.Xpo.v16.1.resources.dll" />
+    <Content Include="bin\Release\ru\DevExpress.XtraCharts.v16.1.resources.dll" />
+    <Content Include="LabSys.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LabSys.edmx</DependentUpon>
+      <LastGenOutput>LabSys.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="LabSys.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LabSys.edmx</DependentUpon>
+      <LastGenOutput>LabSys.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\de\" />
+    <Folder Include="bin\Debug\es\" />
+    <Folder Include="bin\Debug\ja\" />
+    <Folder Include="bin\Debug\ru\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>

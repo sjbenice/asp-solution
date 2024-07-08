@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="sqlDataSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="customSqlQuery1.Sql" xml:space="preserve">
+    <value>select "QuotationMaster"."QuotationMasterID",
+       "QuotationMaster"."ApprovedBy",
+       "QuotationMaster"."TransactionDate",
+       "QuotationMaster"."EntryDate", "QuotationMaster"."ExpiryDate",
+       "QuotationMaster"."FKEnquiryMasterID",
+       "QuotationMaster"."FKCustomerID",
+       "QuotationMaster"."FKProjectID", "QuotationMaster"."Remarks",
+       "QuotationMaster"."IsClosed", "QuotationMaster"."IsActive",
+       "QuotationMaster"."StatusID", "QuotationMaster"."PaymentTerms",
+       "QuotationMaster"."FKTermsConditionsID",
+       "QuotationMaster"."QuotationNo", "QuotationMaster"."ShowTotal",
+       "ProjectsList"."ProjectName", "ProjectsList"."ProjectCode",
+       "ProjectsList"."AshghalCode", "ContractorsList"."ContractorID",
+       "ContractorsList"."ContractorCode",
+       "ContractorsList"."ContractorName",
+       "CustomersList"."CustomerID", "CustomersList"."CustomerCode","CustomersList"."Address","CustomersList"."Email",
+       "CustomersList"."CustomerName", "CustomersList"."PhoneNumber","CustomersList"."POBox","CustomersList"."FaxNumber",
+       "TermsConditionList"."TermName",
+       "TermsConditionList"."Description",
+       "TermsConditionList"."TermConditionID"
+  from (((("dbo"."QuotationMaster" "QuotationMaster"
+  left join "dbo"."ProjectsList" "ProjectsList"
+       on ("ProjectsList"."ProjectID" = "QuotationMaster"."FKProjectID"))
+  left join "dbo"."ContractorsList" "ContractorsList"
+       on ("ContractorsList"."ContractorID" = "ProjectsList"."FKContractorID"))
+  left join "dbo"."CustomersList" "CustomersList"
+       on ("CustomersList"."CustomerID" = "QuotationMaster"."FKCustomerID"))
+  left join "dbo"."TermsConditionList" "TermsConditionList"
+       on ("TermsConditionList"."TermConditionID" = "QuotationMaster"."FKTermsConditionsID"))</value>
+  </data>
+  <data name="customSqlQuery2.Sql" xml:space="preserve">
+    <value>select ROW_NUMBER() OVER (Partition By  FKQuotationMasterID ORDER BY QuotationDetailsID ASC) AS No, "QuotationDetails"."QuotationDetailsID",
+       "QuotationDetails"."FKQuotationMasterID",
+       "QuotationDetails"."FKTestID",
+       "QuotationDetails"."FKPriceUnitID",
+       "QuotationDetails"."FKEnquiryDetailsID",
+       CASE  WHEN  "PriceUnitList"."UnitType" = 1 THEN [QuotationWorkOrderList].MonthlyRate else "QuotationDetails"."Price" END as price, 
+	 CASE   WHEN  "PriceUnitList"."UnitType" = 1 THEN 1 else "QuotationDetails"."MinQty" END as "MinQty",
+
+       "QuotationDetails"."Remarks",
+       "QuotationDetails"."FKMaterialTypeID",
+       "QuotationDetails"."FKMaterialDetailsID",
+       "MaterialsDetails"."MaterialName" as "MaterialName_MaterialName",
+       "MaterialsDetails"."FKMaterialTypeID" as "MaterialName_FKMaterialTypeID",
+       "MaterialsTypes"."MaterialTypeID",
+       "MaterialsTypes"."MaterialName", "PriceUnitList"."PriceUnitID",
+       "PriceUnitList"."UnitType", "PriceUnitList"."UnitName",
+       "TestPrices"."MinimumPrice", "TestPrices"."DefaultPrice",
+       "TestPrices"."FKTestID" as "TestPrices_FKTestID",
+       "TestsList"."TestName", "TestsList"."TestDescription",
+       "TestsList"."ShortName", "TestsList"."AshghalTestNumber",
+       "TestsList"."StandardNumber",
+       "TestsList"."DefaultPrice" as "TestsList_DefaultPrice",
+       "TestsList"."MinimumPrice" as "TestsList_MinimumPrice"
+  from ((((("dbo"."QuotationDetails" "QuotationDetails"
+ left join "dbo"."PriceUnitList" "PriceUnitList"
+       on ("PriceUnitList"."PriceUnitID" = "QuotationDetails"."FKPriceUnitID"))
+left join [dbo].[QuotationWorkOrderList]
+       on ([dbo].[QuotationWorkOrderList].FkQuotationDetailsID = "QuotationDetails".QuotationDetailsID)
+  left join "dbo"."MaterialsTypes"
+       "MaterialsTypes"
+       on ("MaterialsTypes"."MaterialTypeID" = "QuotationDetails"."FKMaterialTypeID"))
+  left join "dbo"."MaterialsDetails"
+       "MaterialsDetails"
+       on ("MaterialsDetails"."MaterialDetailsID" = "QuotationDetails"."FKMaterialDetailsID"))
+  left join "dbo"."TestsList" "TestsList"
+       on ("TestsList"."TestID" = "QuotationDetails"."FKTestID"))
+  left join "dbo"."TestPrices" "TestPrices"
+       on (("TestPrices"."FKTestID" = "TestsList"."TestID")
+       and ("TestPrices"."FKPriceUnitID" = "PriceUnitList"."PriceUnitID")))</value>
+  </data>
+  <data name="sqlDataSource1.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IkVucXVpcnlNYXN0ZXIiPjxGaWVsZCBOYW1lPSJDb250YWN0UGVyc29uIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkVucXVpcnlNYXN0ZXJJRCIgVHlwZT0iSW50NjQiIC8+PC9WaWV3PjxWaWV3IE5hbWU9IlF1b3RhdGlvbkRldGFpbHMiPjxGaWVsZCBOYW1lPSJObyIgVHlwZT0iSW50NjQiIC8+PEZpZWxkIE5hbWU9IlF1b3RhdGlvbkRldGFpbHNJRCIgVHlwZT0iSW50NjQiIC8+PEZpZWxkIE5hbWU9IkZLUXVvdGF0aW9uTWFzdGVySUQiIFR5cGU9IkludDY0IiAvPjxGaWVsZCBOYW1lPSJGS1Rlc3RJRCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZLUHJpY2VVbml0SUQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGS0VucXVpcnlEZXRhaWxzSUQiIFR5cGU9IkludDY0IiAvPjxGaWVsZCBOYW1lPSJwcmljZSIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iTWluUXR5IiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJSZW1hcmtzIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkZLTWF0ZXJpYWxUeXBlSUQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGS01hdGVyaWFsRGV0YWlsc0lEIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWF0ZXJpYWxOYW1lX01hdGVyaWFsTmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJNYXRlcmlhbE5hbWVfRktNYXRlcmlhbFR5cGVJRCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hdGVyaWFsVHlwZUlEIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWF0ZXJpYWxOYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlByaWNlVW5pdElEIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVW5pdFR5cGUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJVbml0TmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJNaW5pbXVtUHJpY2UiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkRlZmF1bHRQcmljZSIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iVGVzdFByaWNlc19GS1Rlc3RJRCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlRlc3ROYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRlc3REZXNjcmlwdGlvbiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJTaG9ydE5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQXNoZ2hhbFRlc3ROdW1iZXIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iU3RhbmRhcmROdW1iZXIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVGVzdHNMaXN0X0RlZmF1bHRQcmljZSIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iVGVzdHNMaXN0X01pbmltdW1QcmljZSIgVHlwZT0iRGVjaW1hbCIgLz48L1ZpZXc+PFZpZXcgTmFtZT0iUXVvdGF0aW9uTWFzdGVyIj48RmllbGQgTmFtZT0iUXVvdGF0aW9uTWFzdGVySUQiIFR5cGU9IkludDY0IiAvPjxGaWVsZCBOYW1lPSJBcHByb3ZlZEJ5IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRyYW5zYWN0aW9uRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkVudHJ5RGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkV4cGlyeURhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJGS0VucXVpcnlNYXN0ZXJJRCIgVHlwZT0iSW50NjQiIC8+PEZpZWxkIE5hbWU9IkZLQ3VzdG9tZXJJRCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZLUHJvamVjdElEIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVtYXJrcyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJJc0Nsb3NlZCIgVHlwZT0iQm9vbGVhbiIgLz48RmllbGQgTmFtZT0iSXNBY3RpdmUiIFR5cGU9IkJvb2xlYW4iIC8+PEZpZWxkIE5hbWU9IlN0YXR1c0lEIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUGF5bWVudFRlcm1zIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkZLVGVybXNDb25kaXRpb25zSUQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJRdW90YXRpb25ObyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJTaG93VG90YWwiIFR5cGU9IkJvb2xlYW4iIC8+PEZpZWxkIE5hbWU9IlByb2plY3ROYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlByb2plY3RDb2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkFzaGdoYWxDb2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNvbnRyYWN0b3JJRCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNvbnRyYWN0b3JDb2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNvbnRyYWN0b3JOYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkN1c3RvbWVySUQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDdXN0b21lckNvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQWRkcmVzcyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJFbWFpbCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDdXN0b21lck5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUGhvbmVOdW1iZXIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUE9Cb3giIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRmF4TnVtYmVyIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRlcm1OYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRlc2NyaXB0aW9uIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRlcm1Db25kaXRpb25JRCIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjxSZWxhdGlvbiBNYXN0ZXI9IlF1b3RhdGlvbk1hc3RlciIgRGV0YWlsPSJRdW90YXRpb25EZXRhaWxzIj48S2V5Q29sdW1uIE1hc3Rlcj0iUXVvdGF0aW9uTWFzdGVySUQiIERldGFpbD0iRktRdW90YXRpb25NYXN0ZXJJRCIgLz48L1JlbGF0aW9uPjxSZWxhdGlvbiBNYXN0ZXI9IlF1b3RhdGlvbk1hc3RlciIgRGV0YWlsPSJFbnF1aXJ5TWFzdGVyIj48S2V5Q29sdW1uIE1hc3Rlcj0iRktFbnF1aXJ5TWFzdGVySUQiIERldGFpbD0iRW5xdWlyeU1hc3RlcklEIiAvPjwvUmVsYXRpb24+PC9EYXRhU2V0Pg==</value>
+  </data>
+</root>
